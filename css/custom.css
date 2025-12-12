@@ -1,19 +1,29 @@
 :root {
   /* Farver */
+  --color-h1: #2a2a2a;
+  --color-h2-primary: #2a60c2;
+  --color-h2-primary-light: #dfe5f0;
+  --color-h2-secondary: #851600;
+  --color-h2-secondary-light: #ebdad7;
+  --color-h3-primary: #851600;
+  --color-h3-secondary: #2a60c2;
+  --color-h4-primary: #851600;
+  --color-h4-secondary: #2a60c2;
+  --color-text: #2a2a2a;
 
   /* Header */
   --color-head-bg: #2a2a2a;
   --color-head-text: #dfe5f0;
+  --color-head-text-hover: #ebdad7;
 
   /* Footer */
   --color-footer-bg: #2a2a2a;
   --color-footer-text: #ebdad7;
+  --color-footer-text-hover: #dfe5f0;
 
-  /* Overskrift color*/
-  --color-h1: #2a2a2a;
-  --color-h2: #306fe1;
-  --color-h3: #851600;
-  --color-h4: #486284;
+  /* Borders */
+  --border-radius-card: 22px;
+  --border-radius-img: 15px;
 
   /* CTA */
   --color-cta1-bg: #faf3a1;
@@ -21,21 +31,25 @@
   --color-cta2-bg: #e41e29;
   --color-cta2-text: #faf3a1;
 
-  /* Card lokation og ingredients */
+  /* Cards */
   --color-card-bg: #faf3a1;
-  --color-card-text: #851600;
+  --color-card-bg-primary: #dfe5f0;
+  --color-card-bg-secondary: #ebdad7;
 
-  /* Cards menu*/
-  --color-card-menu1-bg: #ebdad7;
-  --color-card-menu1-text: #851600;
-  --color-card-menu2-bg: #faf3a1;
-  --color-card-menu2-text: #851600;
-  --color-card-menu3-bg: #dfe5f0;
-  --color-card-menu3-text: #2a60c2;
+  --color-bg-text: #851600;
+  --color-primary-text: #2a60c2;
+  --color-secondary-text: #851600;
+
+  /* Fonts */
+  --font-family-headline: "Baloo2", ui-sans-serif;
+  --font-family-text: "Tahoma", ui-sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
 
   /* Skriftstørrelse */
   --size-h1: clamp(3rem, 7vw, 6rem);
-  --size-h2: 24px;
-  --size-h3: 24px;
-  --size-p: 20px;
+  --size-h2: clamp(3rem, 7vw, 6rem);
+  --size-h3: clamp(3rem, 7vw, 6rem);
+  --size-h4: clamp(3rem, 7vw, 6rem);
+  --size-p: clamp(3rem, 7vw, 6rem);
 }
