@@ -25,6 +25,9 @@
   --border-radius-card: 22px;
   --border-radius-img: 15px;
 
+  /* Drop shadow */
+  --drop-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+
   /* CTA */
   --color-cta1-bg: #faf3a1;
   --color-cta1-text: #851600;
@@ -47,9 +50,9 @@
   --font-weight-bold: 700;
 
   /* Skriftstørrelse */
-  --size-h1: clamp(3rem, 7vw, 6rem);
-  --size-h2: clamp(3rem, 7vw, 6rem);
+  --size-h1: clamp(3rem, 4vw, 6rem);
+  --size-h2: clamp(3rem, 4vw, 6rem);
   --size-h3: clamp(3rem, 7vw, 6rem);
   --size-h4: clamp(3rem, 7vw, 6rem);
-  --size-p: clamp(3rem, 7vw, 6rem);
+  --size-p: clamp(1rem, 2vw, 6rem);
 }
