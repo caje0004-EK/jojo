@@ -32,7 +32,7 @@ h4 {
   font-size: var(--size-h4);
 }
 p {
-  font-family: "Tahoma";
+  font-family: var(--font-family-text);
   font-weight: var(--font-weight-regular);
   font-size: var(--size-p);
 }
@@ -41,6 +41,7 @@ p {
 header {
   position: sticky;
   top: 0.5em;
+  z-index: 100;
 }
 .navbar {
   background-color: var(--color-head-bg);
