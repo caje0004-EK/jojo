@@ -1,8 +1,4 @@
 /* grids */
-.about_grid-1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
 
 /* backgroud colors */
 #organic,
@@ -12,20 +8,31 @@
 
 #lemon,
 #whiskey {
-  background-color: var(--color-card-menu1-bg);
+  background-color: var(--color-card-bg-secondary);
 }
 #rum,
 #coconut {
-  background-color: var(--color-card-menu3-bg);
+  background-color: var(--color-card-bg-primary);
 }
 
 /* card styles */
-#ingredients{
-    margin: 1em;
-    row-gap: 1em;
-    column-gap: 1em;
+#ingredients {
+  margin: 1em;
+  row-gap: 1em;
+  column-gap: 1em;
 }
 
-#organic, #ingredients, #gallery{
-    border-radius: var(--border-radius-card);
+#organic,
+#ingredients article,
+#gallery {
+  border-radius: var(--border-radius-card);
+}
+
+/* textstyles */
+
+@media (width > 800px) {
+  .about_grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
