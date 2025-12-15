@@ -80,26 +80,19 @@
   margin-top: 1em;
 }
 
-.section-header {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-  color: inherit;
-}
-
 .drink-item {
   margin-bottom: 0.5em;
 }
 
 .drink-item h3 {
-  font-size: 1em;
-  font-weight: bold;
+  font-size: var(--size-h3);
+  font-weight: var(--font-wight-bold);
   margin: 0 0 0.2em 0;
   text-transform: uppercase;
 }
 
 .drink-item p {
-  font-size: 0.85em;
+  font-size: var(--size-p);
   margin: 0;
   opacity: 0.9;
 }
@@ -112,7 +105,7 @@
 }
 
 .price {
-  font-weight: bold;
+  font-weight: var(--font-wight-bold);
 }
 
 .carousel {
