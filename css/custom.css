@@ -46,6 +46,7 @@
   /* Fonts */
   --font-family-headline: "Baloo2", ui-sans-serif;
   --font-family-text: "Tahoma", ui-sans-serif;
+  --font-family-text-bold: "TahomaBold", ui-sans-serif;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 
