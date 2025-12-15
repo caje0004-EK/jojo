@@ -120,13 +120,13 @@ main a {
 
 #organic,
 #ingredients article,
-#gallery {
+#gallery-container {
   border-radius: var(--border-radius-card);
   box-shadow: var(--drop-shadow);
 }
 
 #organic,
-#gallery {
+#gallery-container {
   background-color: var(--color-card-bg);
 }
 
@@ -160,7 +160,7 @@ main a {
   padding-bottom: 1em;
 }
 
-/* ingredients section*/
+/* ingredients section */
 #ingredients .about_grid-1-1 {
   display: grid;
   grid-template-columns: 3fr 4fr;
@@ -180,6 +180,33 @@ main a {
   margin: 0 1.8em;
   margin-bottom: 1.8em;
   grid-column: 1/-1;
+}
+
+/* gallery section */
+#gallery-container {
+  overflow: hidden;
+}
+
+#gallery img {
+  max-width: 250px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+#gallery {
+  padding: 5em 2em;
+  display: flex;
+  gap: 5em;
+  animation: scroll 55s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 @media (width > 800px) {
@@ -202,6 +229,7 @@ main a {
 }
 
 @media (width < 800px) {
+  /* ingredients section */
   #ingredients article {
     margin: 1em 0;
   }
