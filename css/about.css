@@ -1,6 +1,130 @@
-/* grids */
+/* layout */
+main {
+  margin: 1em;
+  display: grid;
+  row-gap: 3em;
+}
 
-/* backgroud colors */
+section {
+  place-items: center;
+}
+
+/* img */
+img {
+  border-radius: var(--border-radius-img);
+  display: block;
+  place-self: center;
+}
+
+.red img {
+  border: solid 0.2rem #851600;
+}
+
+.blue img {
+  border: solid 0.2rem #2a60c2;
+}
+
+/* textstyles */
+h1,
+h2 {
+  place-self: center;
+}
+
+#story h2 {
+  color: var(--color-h2-primary);
+}
+#organic h2,
+#organic h3 {
+  color: var(--color-h2-secondary);
+}
+
+.red h3,
+.red h4,
+.red p {
+  color: var(--color-secondary-text);
+}
+
+.blue h3,
+.blue h4,
+.blue p {
+  color: var(--color-primary-text);
+}
+
+p {
+  line-height: 1.7rem;
+}
+
+#story p {
+  margin: 0.7rem;
+}
+
+#organic p {
+  text-align: center;
+}
+
+#ingredients p {
+  margin: 0.4rem 0;
+}
+
+main a {
+  font-family: var(--font-family-text-bold);
+}
+/* cta'er */
+.cta-yellow {
+  background: var(--color-cta1-bg);
+  padding: 6px 18px;
+  border-radius: 10px 15px 25px 25px;
+  text-decoration: none;
+  color: var(--color-cta1-text);
+  font-weight: bold;
+  box-shadow: var(--drop-shadow);
+  cursor: pointer;
+  font-size: clamp(0.7rem, 1vw, 2rem);
+
+  &:hover {
+    background: var(--color-cta2-bg);
+    color: var(--color-cta2-text);
+  }
+}
+
+.cta-red {
+  background: var(--color-cta2-bg);
+  padding: 6px 18px;
+  border-radius: 10px 15px 25px 25px;
+  text-decoration: none;
+  color: var(--color-cta2-text);
+  font-weight: bold;
+  box-shadow: var(--drop-shadow);
+  cursor: pointer;
+
+  &:hover {
+    background: var(--color-cta1-bg);
+    color: var(--color-cta1-text);
+  }
+}
+
+.cta-menu {
+  margin: 1em 0;
+}
+
+.expanded {
+  margin-top: 1.5em;
+}
+
+/* card styles */
+#ingredients {
+  margin: 1em;
+  row-gap: 1em;
+  column-gap: 1em;
+}
+
+#organic,
+#ingredients article,
+#gallery {
+  border-radius: var(--border-radius-card);
+  box-shadow: var(--drop-shadow);
+}
+
 #organic,
 #gallery {
   background-color: var(--color-card-bg);
@@ -15,24 +139,70 @@
   background-color: var(--color-card-bg-primary);
 }
 
-/* card styles */
-#ingredients {
-  margin: 1em;
-  row-gap: 1em;
+#organic div {
+  place-items: center;
+}
+
+#cta-menu {
+  justify-self: center;
+  margin: 1.5em;
+}
+
+/* organic section */
+#organic .red {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   column-gap: 1em;
+  margin: 1em;
 }
 
-#organic,
-#ingredients article,
-#gallery {
-  border-radius: var(--border-radius-card);
+#organic {
+  padding-bottom: 1em;
 }
 
-/* textstyles */
+/* ingredients section*/
+#ingredients .about_grid-1-1 {
+  display: grid;
+  grid-template-columns: 3fr 4fr;
+}
+
+.img_container {
+  margin: 1.8em;
+  margin-bottom: 1em;
+}
+
+.description {
+  margin: 1.8em 0;
+  margin-right: 3em;
+}
+
+.used {
+  margin: 0 1.8em;
+  margin-bottom: 1.8em;
+  grid-column: 1/-1;
+}
 
 @media (width > 800px) {
+  /* grid */
   .about_grid-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+
+  /* organic section */
+  #organic h2 {
+    justify-self: left;
+    margin: 0.5em;
+  }
+
+  #organic .red {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+  }
+}
+
+@media (width < 800px) {
+  #ingredients article {
+    margin: 1em 0;
   }
 }
