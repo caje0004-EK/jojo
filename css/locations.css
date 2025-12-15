@@ -2,6 +2,26 @@ h1 {
   text-align: center;
   margin-bottom: 4rem;
 }
+
+img {
+  border-radius: 10px;
+}
+
+section:nth-of-type(1) h2,
+section:nth-of-type(3) h2 {
+  color: var(--color-h2-primary);
+}
+
+section:nth-of-type(2) h2,
+section:nth-of-type(4) h2 {
+}
+
+/* section:nth-of-type(1) h3,
+section:nth-last-of-type(1) p,
+section:nth-of-type(3) h2,
+section:nth-of-type(3) h3,
+section:nth-last-of-type(3) p  */
+
 .galleri {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -40,16 +60,17 @@ h1 {
 
 .opening_hours1 a,
 .opening_hours2 a,
-h4 {
+h3 {
   grid-column: 1 / -1;
   text-align: center;
 }
 
 .opening_hours1 {
-  background-color: var(--color-card-bg-primary);
+  background-color: var(--color-h2-primary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
+  border-radius: 10px;
 }
 
 .opening_hours2 {
@@ -67,6 +88,16 @@ h4 {
 
 .hours {
   grid-column: 2/3;
+}
+
+.maps {
+  background: var(--color-cta1-bg);
+  padding: 20px 1px;
+  border-radius: 10px 15px 25px 25px;
+  text-decoration: none;
+  color: var(--color-cta1-text);
+  font-weight: bold;
+  box-shadow: var(--drop-shadow);
 }
 
 @media (width>800px) {
