@@ -13,7 +13,7 @@
 }
 
 @font-face {
-  font-family: "Tahoma";
+  font-family: "TahomaBold";
   src: url("../fonts/Tahoma-Bold.woff2") format("woff2");
   font-weight: var(--font-weight-bold);
   font-style: normal;
