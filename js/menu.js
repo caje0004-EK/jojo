@@ -1,21 +1,3 @@
-// const items = document.querySelectorAll(".item");
-// let index = 0;
-
-// function showItem(i) {
-//   items.forEach((item) => item.classList.remove("active"));
-//   items[i].classList.add("active");
-// }
-
-// document.getElementById("prevBtn").addEventListener("click", () => {
-//   index = (index - 1 + items.length) % items.length;
-//   showItem(index);
-// });
-
-// document.getElementById("nextBtn").addEventListener("click", () => {
-//   index = (index + 1) % items.length;
-//   showItem(index);
-// });
-// Function to initialize carousel
 function initCarousel(prevBtnId, nextBtnId, containerSelector) {
   const container = document.querySelector(containerSelector);
   if (!container) return;
