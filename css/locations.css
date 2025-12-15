@@ -3,29 +3,73 @@ h1 {
   margin-bottom: 4rem;
 }
 
+h2,
+.address_b,
+.address_r {
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
 img {
-  border-radius: 10px;
+  border-radius: var(--border-radius-img);
+}
+
+section {
+  border-radius: var(--border-radius-card);
+  margin-bottom: 2.5rem;
+}
+
+article {
+  padding: 1.5rem;
 }
 
 section:nth-of-type(1) h2,
-section:nth-of-type(3) h2 {
+section:nth-of-type(3) h2,
+.address_b {
   color: var(--color-h2-primary);
 }
 
 section:nth-of-type(2) h2,
-section:nth-of-type(4) h2 {
+section:nth-of-type(4) h2,
+.address_r {
+  color: var(--color-h2-secondary);
 }
 
-/* section:nth-of-type(1) h3,
-section:nth-last-of-type(1) p,
-section:nth-of-type(3) h2,
-section:nth-of-type(3) h3,
-section:nth-last-of-type(3) p  */
+section:nth-of-type(1) p,
+section:nth-of-type(3) p {
+  color: var(--color-h2-primary-light);
+}
+
+section:nth-of-type(2) p,
+section:nth-of-type(4) p {
+  color: var(--color-h2-secondary-light);
+}
+
+.blue {
+  color: var(--color-h2-primary-light);
+  margin-top: 1.5rem;
+}
+
+.red {
+  color: var(--color-h2-secondary-light);
+  margin-top: 1.5rem;
+}
+
+section:nth-of-type(1),
+section:nth-of-type(3) {
+  background: var(--color-h2-primary-light);
+}
+
+section:nth-of-type(2),
+section:nth-of-type(4) {
+  background: var(--color-h2-secondary-light);
+}
 
 .galleri {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  margin-bottom: 1rem;
 }
 
 .galleri img {
@@ -58,9 +102,10 @@ section:nth-last-of-type(3) p  */
   width: 100%;
 }
 
-.opening_hours1 a,
-.opening_hours2 a,
-h3 {
+.opening_hours1,
+.opening_hours2,
+.blue,
+.red {
   grid-column: 1 / -1;
   text-align: center;
 }
@@ -70,14 +115,15 @@ h3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
-  border-radius: 10px;
+  border-radius: var(--border-radius-img);
 }
 
 .opening_hours2 {
-  background-color: var(--color-card-bg-secondary);
+  background-color: var(--color-h2-secondary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
+  border-radius: var(--border-radius-img);
 }
 
 .days {
@@ -91,13 +137,17 @@ h3 {
 }
 
 .maps {
+  grid-column: 1/-1;
+  font-family: var(--font-family-text-bold);
   background: var(--color-cta1-bg);
-  padding: 20px 1px;
-  border-radius: 10px 15px 25px 25px;
+  padding: 0.5em;
+  border-radius: 10px 10px 25px 25px;
   text-decoration: none;
   color: var(--color-cta1-text);
   font-weight: bold;
   box-shadow: var(--drop-shadow);
+  justify-self: center;
+  margin-bottom: 1em;
 }
 
 @media (width>800px) {
@@ -124,6 +174,18 @@ h3 {
   }
 
   .location {
+    margin-right: 1rem;
     text-align: end;
+  }
+
+  section {
+    margin: 3rem;
+  }
+
+  section:nth-of-type(1) h2,
+  section:nth-of-type(3) h2,
+  section:nth-of-type(1) h3,
+  section:nth-of-type(3) h3 {
+    margin-left: 1rem;
   }
 }
