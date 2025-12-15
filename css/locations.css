@@ -46,14 +46,14 @@ h4 {
 }
 
 .opening_hours1 {
-  background-color: var(--color-card-menu3-bg);
+  background-color: var(--color-card-bg-primary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
 }
 
 .opening_hours2 {
-  background-color: var(--color-card-menu1-bg);
+  background-color: var(--color-card-bg-secondary);
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin-bottom: 3rem;
