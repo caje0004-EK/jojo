@@ -48,11 +48,15 @@ section:nth-of-type(4) p {
 .blue {
   color: var(--color-h2-primary-light);
   margin-top: 1.5rem;
+  text-align: center;
+  grid-column: 1/-1;
 }
 
 .red {
   color: var(--color-h2-secondary-light);
   margin-top: 1.5rem;
+  text-align: center;
+  grid-column: 1/-1;
 }
 
 section:nth-of-type(1),
@@ -103,11 +107,8 @@ section:nth-of-type(4) {
 }
 
 .opening_hours1,
-.opening_hours2,
-.blue,
-.red {
+.opening_hours2 {
   grid-column: 1 / -1;
-  text-align: center;
 }
 
 .opening_hours1 {
