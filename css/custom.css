@@ -52,8 +52,8 @@
 
   /* Skriftstørrelse */
   --size-h1: clamp(3rem, 5vw, 6rem);
-  --size-h2: clamp(2.5rem, 4vw, 4rem);
-  --size-h3: clamp(1.5rem, 2vw, 3.5rem);
+  --size-h2: clamp(2.25rem, 4vw, 4rem);
+  --size-h3: clamp(1.2rem, 2vw, 3.5rem);
   --size-h4: clamp(1rem, 1.5vw, 3rem);
-  --size-p: clamp(1rem, 1vw, 2rem);
+  --size-p: clamp(0.75rem, 1vw, 2rem);
 }

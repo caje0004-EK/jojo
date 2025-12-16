@@ -23,6 +23,13 @@
 .menu-container3 {
   background-color: var(--color-card-bg-primary);
   color: var(--color-primary-text);
+  h3 {
+    margin: 1em 0 0.5em 0;
+  }
+}
+
+h1 {
+  text-align: center;
 }
 
 .cocktails {
@@ -64,7 +71,8 @@
   box-shadow: var(--drop-shadow);
 }
 
-.menu-title {
+.menu-title,
+.price {
   display: flex;
   align-items: center;
   gap: 2em;
@@ -120,5 +128,11 @@
   .menu-container2,
   .menu-container3 {
     grid-template-columns: 1fr;
+  }
+  .menu-container2 .carousel {
+    order: 2;
+  }
+  .menu-title {
+    margin-top: 1em;
   }
 }
