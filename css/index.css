@@ -50,8 +50,8 @@ h1 {
   margin-left: 3em;
 }
 .grid-1-1 p:first-child {
-  color: #2a60c2;
-  font-weight: bold;
+  color: var(--color-h2-primary);
+  font-family: var(--font-family-text-bold);
 }
 .grid-1-1 p {
   margin-left: 3em;
@@ -98,7 +98,7 @@ h2:first-child {
   margin: 0 1em;
 }
 section.location {
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: var(--drop-shadow);
   padding-bottom: 3em;
 }
 h3 {
@@ -111,16 +111,12 @@ h3 {
   font-family: var(--font-family-text-bold);
 }
 .event-h3 {
-  color: #ebdad7;
+  color: var(--color-card-bg-secondary);
 }
-/* .events-container h3 {
-  color: white;
-} */
+
 .events-container {
   display: flex;
   justify-content: space-between;
-  /* grid-template-columns: 1fr 1fr 1fr;
-  gap: 10em;*/
   margin: 0 2em 4em 2em;
 }
 .events-container .event-card {
@@ -135,16 +131,17 @@ h3 {
   border-radius: var(--border-radius-card);
 }
 .events-container .event-card:nth-child(2) {
-  background-color: #dfe5f0;
+  background-color: var(--color-card-bg-primary);
   border-radius: var(--border-radius-card);
 }
 .events-container .event-card:nth-child(3) {
   background-color: var(--color-cta1-text);
-  color: #ebdad7;
+  color: var(--color-card-bg-secondary);
   border-radius: var(--border-radius-card);
 }
 .h2_event {
   color: var(--color-h2-primary);
+  margin: 1em 0;
 }
 .carousel-container button {
   display: none;
@@ -171,36 +168,42 @@ h3 {
     display: grid;
     justify-content: center;
   }
+  .carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
 
   .h2_event {
     text-align: center;
-    font-size: 2em;
-    margin-top: 20px;
-    color: #1a73e8;
+    font-size: var(--size-h2);
+    margin: 1em 0;
+    color: var(--color-h2-primary);
   }
-  .carousel-container button {
-    font-size: 2em;
-    background-color: white;
+  .arrow {
+    background: none;
     border: none;
-    align-items: center;
+    font-size: var(--size-h1);
+    cursor: pointer;
   }
 
   .arrow:hover {
-    background: rgba(255, 255, 255, 1);
+    color: var(--color-cta1-text);
   }
 
-  .arrow.left {
-    left: 20px;
-  }
-
-  .arrow.right {
-    right: 20px;
-  }
   .event-card:first-child,
   .event-card:last-child {
     display: none;
   }
   .carousel-container button {
     display: contents;
+  }
+  .event-card {
+    display: none;
+  }
+
+  .event-card.active {
+    display: block;
   }
 }
