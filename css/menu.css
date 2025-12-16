@@ -114,6 +114,10 @@ h1 {
   transition: background 0.3s ease;
 }
 
+.arrow:hover {
+  color: var(--color-cta1-text);
+}
+
 .arrow.left {
   left: 3rem;
 }
