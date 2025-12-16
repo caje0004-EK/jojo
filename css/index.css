@@ -27,6 +27,7 @@ video {
   font-weight: bold;
   box-shadow: var(--drop-shadow);
   cursor: pointer;
+  border: none;
 }
 .grid-1-1 {
   display: grid;

@@ -23,11 +23,10 @@
 .menu-container3 {
   background-color: var(--color-card-bg-primary);
   color: var(--color-primary-text);
-  h3 {
-    margin: 1em 0 0.5em 0;
-  }
 }
-
+.menu-container3 h3 {
+  margin: 1em 0 0.5em 0;
+}
 h1 {
   text-align: center;
 }
