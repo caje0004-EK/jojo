@@ -96,6 +96,10 @@ h2:first-child {
   border-radius: var(--border-radius-card);
   margin: 0 1em;
 }
+section.location {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.5);
+  padding-bottom: 3em;
+}
 h3 {
   margin-top: 1em;
   color: var(--color-cta1-text);
@@ -141,6 +145,9 @@ h3 {
 .h2_event {
   color: var(--color-h2-primary);
 }
+.carousel-container button {
+  display: none;
+}
 @media (width < 800px) {
   .grid-1-1 {
     grid-template-columns: 1fr;
@@ -161,6 +168,7 @@ h3 {
   }
   .events-container {
     display: grid;
+    justify-content: center;
   }
 
   .h2_event {
@@ -173,6 +181,7 @@ h3 {
     font-size: 2em;
     background-color: white;
     border: none;
+    align-items: center;
   }
 
   .arrow:hover {
@@ -189,5 +198,8 @@ h3 {
   .event-card:first-child,
   .event-card:last-child {
     display: none;
+  }
+  .carousel-container button {
+    display: contents;
   }
 }
